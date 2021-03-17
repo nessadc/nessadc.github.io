@@ -1,0 +1,34 @@
+html {
+    font-size: 10px; /* Whoo CSS comments cool :D */
+    font-family: 'Roboto', sans-serif;
+    background-color: #93A3B1;
+}
+
+body {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #7C898B;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #EB8258;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #F6F740;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
