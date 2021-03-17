@@ -18,15 +18,15 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
-        myHeading.textContent = 'Hello, ' + myName;
+        myHeading.innerHTML = 'Hello, ' + myName;
     }
-}
+  }
 
 if(!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Hello, ' + myName;
+    myHeading.innerHTML = 'Hello, ' + storedName;
 }
 
 myButton.onclick = function() {
