@@ -9,8 +9,11 @@ myImage.onclick = function() {
     }
 }
 
-let myButton = document.querySelector('button[name=username]');
-let textColorButton = document.querySelector('button[name=text_color]');
+const dynamicList = document.createElement('ul');
+
+let myButton = document.querySelector('button[class=username]');
+let textColorButton = document.querySelector('button[class=text_color]');
+let addItemToListButton = document.querySelector('button[class=add_item]');
 let myHeading = document.querySelector('h1');
 let myTexts = document.querySelectorAll('p');
 let myLists = document.querySelectorAll('li')
@@ -55,4 +58,12 @@ myButton.onclick = function() {
 
 textColorButton.onclick = function() {
     changeTextColor();
+}
+
+document.body.appendChild(dynamicList);
+addItemToListButton.onclick = function() {
+    const listItem = document.createElement('li');
+    const listContent = prompt("What to add?");
+    listItem.textContent = listContent;
+    dynamicList.appendChild(listItem)
 }

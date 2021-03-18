@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>My test page</title>
+    <meta name="author" content="Nessad Choudhury">
+    <meta name="description" content="This is my practice site for learning basic Web technologies.
+    This includes learning HTML, CSS, and JavaScript. I will deploy this site to my github.io page.">
+    <title>Learning JavaScript</title>
+    <link href="icon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Welcome to my page!</h1>
     <img src="images/audi.jpg" alt="An electronic sporty car" width="500">
-    <p>It has been brought to my attention that I need to learn more JavaScript.</p>
+    <p>It has been brought to my attention that I need to learn more <em>JavaScript</em>.</p>
     <p>Actually scratch that, I need to learn React or Vue JS.</p>
     <p>
       These both have an implicit dependency on knowing enough JavaScript.
@@ -25,7 +30,20 @@
       <li>Literally everything is on the web now.</li>
     </ul>
     <p>Check out <a href="https://nessadc.com">my real website</a> if you are bored.  </p>
-    <p><button name='username'>Change User</button> <button name='text_color'>Change Text Color</button></p> 
-    <script src="scripts/main.js"></script>
+    <p>A link to my favorite website. <a href='https://reddit.com' target='_blank' title='Good stuff!'>Click here</a></p>
+    <p>
+      <button class='username'>Change User</button> 
+      <button class='text_color'>Change Text Color</button>
+      <button class='add_item'>Add Item to List</button>
+    </p> 
+    <p>
+      <!-- This is a disabled box that is using a boolean attribute. -->
+      <input type="text" disabled>
+      <!-- This is a regular enabled box. -->
+      <input type="text"><br>
+      <!-- these are escape characters -->
+      &lt;&gt; 
+      Japanese example: ご飯が熱い。
+    </p>
   </body>
 </html>
